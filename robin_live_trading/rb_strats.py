@@ -292,8 +292,15 @@ class robin_strategy():
 
     
     def event_driven(self,inputSymbols):
+        '''stock headline NLP signal'''
         JNJ_news = rs.stocks.get_news('JNJ')
         title0 = JNJ_news[0]['title']
+        signal = self.headline_nlp_model(title0)
+        return signal
+
+    def headline_nlp_model(self):
+        '''load a pretrained embedding model'''
+        return 0
         
 
 
