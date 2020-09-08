@@ -298,7 +298,7 @@ class robin_strategy():
         signal = self.headline_nlp_model(title0)
         return signal
 
-    def headline_nlp_model(self):
+    def headline_nlp_model(self,input):
         '''load a pretrained embedding model'''
         return 0
         
